@@ -2,8 +2,8 @@
   "openapi": "3.0.0",
   "info": {
     "version": "nextjs",
-    "title": "Shiina-Api's",
-    "description": "Hello World",
+    "title": "GOPALASU",
+    "description": "BOT Services",
     "contact": {
       "name": "Source Code",
       "url": "https://github.com/balxz/swagger-nextjs"
