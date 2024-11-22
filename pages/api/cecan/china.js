@@ -55,13 +55,8 @@ async function getRandomChinaCecan() {
     const { data } = await axios.get(randomCecanUrl, {
       responseType: "arraybuffer",
     });
-
     return {
-      status: true,
-      creator: "GOPALASU",
-      result: {
-        image: Buffer.from(data)
-      },
+      Buffer.from(data)
     };
   } catch (error) {
     return {
