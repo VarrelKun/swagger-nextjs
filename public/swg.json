@@ -111,7 +111,7 @@
             "required": false,
             "schema": {
               "type": "string",
-              "example": ""
+              "example": "https://www.instagram.com/p/DBDybO4SH0-/?igsh=dDl5MDRyeGQ0ZXYy"
             }
           }
         ],
