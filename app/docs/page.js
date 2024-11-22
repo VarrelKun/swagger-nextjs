@@ -7,7 +7,7 @@ import axios from "axios"
 import o from "../declaration/createScript"
 import v from "../declaration/createLink"
 
-export default function ApiDocs() {
+export default function Home() {
   useEffect(() => {
     const docs = async () => {
       const linkStyle = v("https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.css")
