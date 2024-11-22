@@ -293,7 +293,8 @@
             "content": {
               "image/jpeg": {
                 "schema": {
-                  "type": "string"
+                  "type": "string",
+                  "format": "byte"
                 }
               }
             }
