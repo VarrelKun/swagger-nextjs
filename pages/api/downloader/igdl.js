@@ -17,5 +17,7 @@ export default async function handler(req, res) {
 }
 
 async function instagram(url) {
-  return response.data
+instagram(url).then(data => {
+return response.data
+})
 }
