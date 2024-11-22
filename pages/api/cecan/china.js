@@ -53,13 +53,7 @@ async function getRandomChinaCecan() {
     const randomCecanUrl = cecanUrls[randomIndex];
 
     const { data } = await axios.get(randomCecanUrl)
-    return {
-      status: true,
-      creator: "GOPALASU",
-      result: {
-        url: data
-      },
-    };
+    return Buffer.from(data).toString("base64")
   } catch (error) {
     return {
       status: false,
