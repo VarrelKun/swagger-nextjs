@@ -8,15 +8,9 @@ export default async function handler(req, res) {
   if (!url) {
     return res.status(400).json({ error: q.msg.qUrl })
   }
-  const result = await igDl(url)
-  if (result.status === "error") {
-    return res.status(500).json(result)
+  const { data } = await igDl(url)
+  if (data.status === "error") {
+    return res.status(500).json(data)
   }
-  res.status(200).json(result)
-}
-
-async function igDl(url) {
-const link = "https://www.instagram.com/p/DAxzjkAyWOm/?igsh=MTZ5eThrMXpteTFpOA=="
-let response = instagram(link)
-return response.data
+  res.status(200).json(data)
 }
