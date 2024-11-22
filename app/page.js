@@ -3,7 +3,7 @@
 
 import Link from "next/link"
 
-export default function Home() {
+export default function ApiDocs() {
   return (
     <div>
       <h1>Hellooo Welcome!!!</h1>
