@@ -58,15 +58,15 @@ async function getRandomChinaCecan() {
 
     return {
       status: true,
-      creator: "XLawXD0",
+      creator: "GOPALASU",
       result: {
-        image: Buffer.from(data).toString("base64"),
+        image: Buffer.from(data)
       },
     };
   } catch (error) {
     return {
       status: false,
-      creator: "XLawXD0",
+      creator: "GOPALASU",
       message: "Gagal mengambil gambar.",
     };
   }
