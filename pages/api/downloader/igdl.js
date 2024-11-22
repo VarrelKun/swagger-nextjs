@@ -15,11 +15,11 @@ export default async function handler(req, res) {
   res.status(200).json({
 	status: true,
 	creator: 'gopalasu',
-	result: result.url
+	result: result
 	})
 }
 
 async function igDl(url) {
   let response = await axios.get(`https://aemt.uk.to/download/igdl?url=${url}`)
-  return response.data.result
+  return response.data.result.url[0]
 }
