@@ -16,12 +16,12 @@ export default async function handler(req, res) {
 	status: true,
 	creator: 'gopalasu',
 	result: {
-			url: result
-		}
+		url: result.url
+	}
 	})
 }
 
 async function igDl(url) {
   let response = await axios.get(`https://aemt.uk.to/download/igdl?url=${url}`)
-  return response.data.result.url
+  return response.data.result
 }
