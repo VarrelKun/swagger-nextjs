@@ -2,21 +2,21 @@
 // custom
 
 export const metadata = {
-  title: "Docs!!",
-  description: "Coming Soon!",
+  title: "gopalasu - REST API Documentation",
+  description: "simple REST API created by Gopalasu !",
   keywords: "Hello Word",
   openGraph: {
-    title: "balxzzy - REST API Documentation",
+    title: "gopalasu - REST API Documentation",
     description:
-      "balxzzy is a free, simple REST API created by balxzzy for the common good. Feel free to use it, but please avoid DDoS attacks.",
-    url: "https://api.balxzzy.xyz",
+      "docs.gopalasu.my.id is a free, simple REST API created by Gopalasu for the common good. Feel free to use it, but please avoid DDoS attacks.",
+    url: "https://docs.gopalasu.my.id",
     type: "website",
     images: [
       {
-        url: "https://nyimpen.vercel.app/component/logoku.png",
+        url: "https://files.catbox.moe/7zjrpc.png",
         width: 800,
-        height: 600,
-        alt: "balxzzy Logo",
+        height: 800,
+        alt: "gopal Logo",
       },
     ],
   },
