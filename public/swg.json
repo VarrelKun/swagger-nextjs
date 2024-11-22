@@ -3,10 +3,10 @@
   "info": {
     "version": "nextjs",
     "title": "GOPALASU",
-    "description": "BOT Services",
+    "description": "This is a API documentation for Xbot Services, please read the documentation carefully before using the API.\n\nbeberapa data fitur diambil dari web aemt.uk.to",
     "contact": {
-      "name": "Source Code",
-      "url": "https://github.com/balxz/swagger-nextjs"
+      "name": "Source API",
+      "url": "https://docs.aemt.uk.to/"
     }
   },
   "paths": {
