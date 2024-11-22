@@ -21,5 +21,5 @@ export default async function handler(req, res) {
 
 async function openAi(q) {
   let response = await axios.get(`https://aemt.uk.to/gpt4?text=${q}`)
-  return response.data
+  return response.data.result
 }
