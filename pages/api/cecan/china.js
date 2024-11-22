@@ -57,7 +57,7 @@ async function getRandomChinaCecan() {
       status: true,
       creator: "GOPALASU",
       result: {
-        url: ${data}
+        url: data
       },
     };
   } catch (error) {
