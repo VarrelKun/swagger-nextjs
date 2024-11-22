@@ -12,7 +12,11 @@ export default async function handler(req, res) {
   if (result.status === "error") {
     return res.status(500).json(result)
   }
-  res.status(200).json(result)
+  res.status(200).json({
+	status: true,
+	creator: 'gopalasu',
+	result: result
+	})
 }
 
 async function openAi(q) {
