@@ -52,10 +52,14 @@ async function getRandomChinaCecan() {
     const randomIndex = Math.floor(Math.random() * cecanUrls.length);
     const randomCecanUrl = cecanUrls[randomIndex];
 
-    const { data } = await axios.get(randomCecanUrl, {
-      responseType: "arraybuffer",
-    });
-    return Buffer.from(data)
+    const { data } = await axios.get(randomCecanUrl)
+    return {
+      status: true,
+      creator: "GOPALASU",
+      result: {
+        url: data,
+      },
+    };
   } catch (error) {
     return {
       status: false,
