@@ -1,48 +1,13 @@
-// app/docs/page.js
-// custom
+// app/page.js
+// https://nextjs.org/docs/app/getting-started/installation
 
-"use client"
-import { useEffect } from "react"
-import axios from "axios"
-import o from "../declaration/createScript"
-import v from "../declaration/createLink"
+import Link from "next/link"
 
-export default function Home() {
-  useEffect(() => {
-    const docs = async () => {
-      const linkStyle = v("https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.css")
-      document.head.appendChild(linkStyle)
-
-      const customStyle = document.createElement("style")
-      const a = await axios.get("/style.css")
-      customStyle.innerHTML = a.data
-      document.head.appendChild(customStyle)
-
-      const scriptBundle = o("https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.js")
-      const scriptPreset = o("https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.js")
-      document.body.appendChild(scriptBundle)
-      document.body.appendChild(scriptPreset)
-
-      scriptBundle.onload = () => {
-        if (window.SwaggerUIBundle && window.SwaggerUIStandalonePreset) {
-          window.SwaggerUIBundle({
-            url: "/swg.json",
-            dom_id: "#swagger-ui",
-            presets: [
-              window.SwaggerUIBundle.presets.apis,
-              window.SwaggerUIStandalonePreset,
-            ],
-            layout: "StandaloneLayout",
-          })
-        }
-      }
-    }
-
-    docs()
-
-    // Optional cleanup function (currently empty)
-    return () => {}
-  }, [])
-
-  return <div id="swagger-ui" style={{ height: "100vh" }}/>
+export default function ApiDocs() {
+  return (
+    <div>
+      <h1>Hellooo Welcome!!!</h1>
+      <Link href="/docs">Try Ke Docs Page!</Link>
+    </div>
+  )
 }
