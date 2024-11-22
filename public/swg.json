@@ -291,7 +291,7 @@
           "200": {
             "description": "success",
             "content": {
-              "application/json": {
+              "image/jpeg": {
                 "schema": {
                   "type": "string"
                 }
