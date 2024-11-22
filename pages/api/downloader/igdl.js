@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await axios.get(url)
-    const videoLinks = response.data.url_list[0]
+    const videoLinks = response.data.data.url_list[0]
     res.status(200).json({
       videoLinks
     })
