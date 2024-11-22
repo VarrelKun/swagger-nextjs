@@ -282,7 +282,7 @@
     },
     "/api/cecan/china": {
       "post": {
-        "summary": "China ngentto",
+        "summary": "",
         "description": "Foto cewe china random njir",
         "tags": [
           "Cecan"
