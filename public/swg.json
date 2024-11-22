@@ -2,11 +2,11 @@
   "openapi": "3.0.0",
   "info": {
     "version": "nextjs",
-    "title": "GOPALASU",
-    "description": "BOT Services",
+    "title": "gopalasu - REST API Documentation",
+    "description": "This is a API documentation for Xbot Services, please read the documentation carefully before using the API.",
     "contact": {
-      "name": "Source Code",
-      "url": "https://github.com/balxz/swagger-nextjs"
+      "name": "Channel",
+      "url": "https://whatsapp.com/channel/0029VavVuvC77qVJBniDaD3x"
     }
   },
   "paths": {
