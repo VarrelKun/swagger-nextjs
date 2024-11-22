@@ -281,7 +281,7 @@
       }
     },
     "/api/cecan/china": {
-      "post": {
+      "get": {
         "summary": "",
         "description": "Foto cewe china random njir",
         "tags": [
