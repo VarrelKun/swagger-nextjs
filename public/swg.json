@@ -2,11 +2,11 @@
   "openapi": "3.0.0",
   "info": {
     "version": "nextjs",
-    "title": "gopalasu - REST API Documentation",
-    "description": "This is a API documentation for Xbot Services, please read the documentation carefully before using the API.",
+    "title": "Shiina-Api's",
+    "description": "Hello World",
     "contact": {
-      "name": "Channel",
-      "url": "https://whatsapp.com/channel/0029VavVuvC77qVJBniDaD3x"
+      "name": "Source Code",
+      "url": "https://github.com/balxz/swagger-nextjs"
     }
   },
   "paths": {
@@ -69,92 +69,6 @@
             "schema": {
               "type": "string",
               "example": "https://vt.tiktok.com/ZSjunPJbq"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "parameter format not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/downloader/igdl": {
-      "get": {
-        "summary": "",
-        "description": "insta downloader",
-        "tags": [
-          "Downloader Sosmed"
-        ],
-        "parameters": [
-          {
-            "name": "url",
-            "in": "query",
-            "description": "`Try Paste ig Url`",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "example": ""
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "success",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "parameter format not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/downloader/spotifydl": {
-      "get": {
-        "summary": "Spotify downloader",
-        "description": "spotify downloader api",
-        "tags": [
-          "Downloader Sosmed"
-        ],
-        "parameters": [
-          {
-            "name": "url",
-            "in": "query",
-            "description": "`Paste Track Url`",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "example": ""
             }
           }
         ],
@@ -323,38 +237,6 @@
         }
       }
     },
-    "/api/cecan/china": {
-      "get": {
-        "summary": "",
-        "description": "Foto cewe china random njir",
-        "tags": [
-          "Cecan"
-        ],
-        "responses": {
-          "200": {
-            "description": "success",
-            "content": {
-              "image/jpeg": {
-                "schema": {
-                  "type": "string",
-                  "format": "byte"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "parameter format not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/say": {
       "get": {
         "summary": "",
@@ -399,4 +281,4 @@
       }
     }
   }
-}
+          }
